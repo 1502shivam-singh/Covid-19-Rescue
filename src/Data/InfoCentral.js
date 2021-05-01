@@ -36,6 +36,12 @@ const centralData = [
     tags: ["panindia", "pan india", "pan-india", "india", ""]
   },
   {
+    title: "Covid army",
+    link: "https://covid.army/",
+    img: "/assets/images/hospital.png",
+    tags: ["panindia", "pan india", "pan-india", "india", ""]
+  },
+  {
     title: "Covid-19 Resources - Sprinklr",
     link: "https://bit.ly/3vfYI6Z",
     img: "/assets/images/hospital.png",
