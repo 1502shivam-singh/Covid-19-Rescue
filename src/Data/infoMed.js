@@ -17,7 +17,7 @@ const medsData = [
       img: "/assets/images/oxygen.png",
       tags: ["lucknow", "uttar pradesh", "uttarpradesh", "up", "uttar-pradesh"]
     },
-        {
+    {
       title: "Remdesivir & Tocilizumab - Lucknow",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/12?id=DASHBOARD_601b9e214c7a6b689d76f493&widgetId=6085200c039ec95a0fda5477",
       img: "/assets/images/meds.png",
@@ -54,25 +54,25 @@ const medsData = [
     tags: ["pune", "maharashtra"]
     },
     {
-      title: "Fabiflu Medicines - Patna",
+      title: "Fabiflu - Patna",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/48?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=48%2448_Medicines&widgetId=608c49c7011fb174c4e8cca9",
       img: "/assets/images/meds.png",
       tags: ["patna", "bihar"]
     },
     {
-      title: "Fabiflu Medicines - Delhi",
+      title: "Fabiflu - Delhi",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/1?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=1%241_Medicines&widgetId=608c0ed0b7cd1c7c449c90dd",
       img: "/assets/images/meds.png",
       tags: ["delhi", "ncr", "delhincr", "delhi-ncr"]
     },
     {
-      title: "Favipiravir Medicines - Delhi",
+      title: "Favipiravir - Delhi",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/1?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=1%241_Medicines&widgetId=608c0effb7cd1c7c449ca2d5",
       img: "/assets/images/meds.png",
       tags: ["delhi", "ncr", "delhincr", "delhi-ncr"]
     },
     {
-      title: "Fabiflu Medicines - Lucknow",
+      title: "Fabiflu - Lucknow",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/12?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=12%2412_Medicines&widgetId=608c46dd011fb174c4e7e2d2",
       img: "/assets/images/meds.png",
       tags: ["delhi", "ncr", "delhincr", "delhi-ncr"]
@@ -88,6 +88,48 @@ const medsData = [
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/19?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=19%2419_Oxygen%20Supplies&widgetId=608c475f011fb174c4e80954",
       img: "/assets/images/oxygen.png",
       tags: ["bihar"]
+    },
+    {
+      title: "Fabiflu - Indore",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/14?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=14%2414_Medicines&widgetId=608c470c011fb174c4e7f1ed",
+      img: "/assets/images/meds.png",
+      tags: ["indore", "madhya pradesh", "madhyapradesh", "madhya-pradesh", "mp"]
+    },
+    {
+      title: "Oxygen cylinders - Indore",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/14?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=14%2414_Oxygen%20Supplies&widgetId=608c470c011fb174c4e7f1f1",
+      img: "/assets/images/oxygen.png",
+      tags: ["indore", "madhya pradesh", "madhyapradesh", "madhya-pradesh", "mp"]
+    },
+    {
+      title: "Oxygen cylinders - Madhya Pradesh",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/23?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=23%2423_Oxygen%20Supplies&widgetId=608c47b2011fb174c4e82564",
+      img: "/assets/images/oxygen.png",
+      tags: ["madhya pradesh", "madhyapradesh", "madhya-pradesh", "mp"]
+    },
+    {
+      title: "Oxygen cylinders - Faridabad",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/46?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=46%2446_Oxygen%20Supplies&widgetId=608c4991011fb174c4e8c049",
+      img: "/assets/images/oxygen.png",
+      tags: ["faridabad", "up", "uttar pradesh", "uttarpradesh", "up", "uttar-pradesh"]
+    },
+    {
+      title: "Fabiflu - Faridabad",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/46?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=46%2446_Medicines&widgetId=608c4991011fb174c4e8c045",
+      img: "/assets/images/meds.png",
+      tags: ["faridabad", "up", "uttar pradesh", "uttarpradesh", "up", "uttar-pradesh"]
+    },
+    {
+      title: "Fabiflu - Rajasthan",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/36?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=36%2436_Medicines&widgetId=608c48c4011fb174c4e88300",
+      img: "/assets/images/meds.png",
+      tags: ["rajasthan"]
+    },
+    {
+      title: "Oxygen cylinders - Rajasthan",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/36?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=36%2436_Oxygen%20Supplies&widgetId=608c48c4011fb174c4e88304",
+      img: "/assets/images/oxygen.png",
+      tags: ["rajasthan"]
     },
     {
       title: "Remdesivir Distributors (pdf) - major states",
