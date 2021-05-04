@@ -9,7 +9,7 @@ const medsData = [
       title: "Hemkunt foundation - Oxygen cylinders",
       link: "https://hemkuntfoundation.com/oxygen-cylinder/",
       img: "/assets/images/oxygen.png",
-      tags: ["mumbai", "maharashtra", ""]
+      tags: ["mumbai", "maharashtra", "gurgaon", "delhi", "delhincr"]
     },
     {
       title: "Oxygen cylinders - Lucknow",
