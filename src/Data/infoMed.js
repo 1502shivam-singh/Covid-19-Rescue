@@ -78,6 +78,18 @@ const medsData = [
       tags: ["delhi", "ncr", "delhincr", "delhi-ncr"]
     },
     {
+      title: "Oxygen cylinders - Punjab",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/39?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=39%2439_Oxygen%20Supplies&widgetId=608c48fa011fb174c4e89397",
+      img: "/assets/images/oxygen.png",
+      tags: ["punjab"]
+    },
+    {
+      title: "Oxygen cylinders - Bihar",
+      link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/19?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=19%2419_Oxygen%20Supplies&widgetId=608c475f011fb174c4e80954",
+      img: "/assets/images/oxygen.png",
+      tags: ["bihar"]
+    },
+    {
       title: "Remdesivir Distributors (pdf) - major states",
       link: "https://drive.google.com/file/d/1GG4GLuXzz_H9Q-gnEPkGEPeWQDdvrEDY/view",
       img: "/assets/images/meds.png",
@@ -112,7 +124,7 @@ const medsData = [
       link: "https://www.linkedin.com/posts/simarpreethsingh_oxygen-community-peoplefirst-activity-6792322902432731136-aAkY",
       img: "/assets/images/oxygen.png",
     tags: ["chandigarh", "punjab", "haryana"]
-    }
+    },
   ];
     
     export default medsData
