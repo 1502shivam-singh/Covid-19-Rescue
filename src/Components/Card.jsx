@@ -5,8 +5,11 @@ import {ReactComponent as Sharebtn} from "../Assets/svg/share.svg";
 function Card(props) {
 
   const entity = useRef(null);
+  const card = useRef(null);
 
   useEffect(()=>{
+    gsap.fromTo([card.current],{opacity: 0}, {opacity: 1, duration: 0.5, ease: "circ.in"});
+
     gsap.to([entity.current],{
       opacity: 1,
       duration: 1
@@ -29,7 +32,7 @@ function Card(props) {
   }
 
   return (
-  <a href={props.link} target="_blank">
+  <a href={props.link} target="_blank" ref={card}>
     <div className="card" ref={entity} >
       <div className="card-img-frame">
         <img className="card-img" src={props.img}/>
