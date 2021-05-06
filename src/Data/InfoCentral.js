@@ -222,12 +222,6 @@ const centralData = [
     tags: ["panindia", "pan india", "pan-india", "india", ""]
   },
   {
-    title: "Covid-19 - RTBot",
-    link: "https://twitter.com/covidrtbot",
-    img: "/assets/images/hospital.png",
-    tags: ["panindia", "pan india", "pan-india", "india", ""]
-  },
-  {
     title: "Covid India Twitter Resources",
     link: "https://covidresources.vercel.app/",
     img: "/assets/images/hospital.png",
