@@ -10,7 +10,7 @@ import medsData from "./Data/infoMed";
 import gsap from "gsap/gsap-core";
 import {ReactComponent as Search} from "./Assets/svg/search.svg";
 import { FiGithub, FiTwitter } from 'react-icons/fi';
-
+import NodeGeocoder from 'node-geocoder'
 export default function App() {
   const headStyle = {
     color: "#c1c1c1"
@@ -83,6 +83,47 @@ export default function App() {
       });
     }
   });
+
+  function success(pos) {
+    var crd = pos.coords;
+    const latitude=crd.latitude;
+    const longitude=crd.longitude;
+    var apikey = '91e34486d51b4b55b4b54c04c205ec80';
+    var api_url = 'https://api.opencagedata.com/geocode/v1/json'
+    var request_url = api_url
+      + '?'
+      + 'key=' + apikey
+      + '&q=' + encodeURIComponent(latitude + ',' + longitude)
+      + '&pretty=1'
+      + '&no_annotations=1';
+    var request = new XMLHttpRequest();
+    request.open('GET', request_url, true);
+    request.onload = function() {
+      if (request.status === 200){ 
+        var data = JSON.parse(request.responseText);
+        const arr=data.results[0].formatted.split(',')
+        var location=arr[arr.length - 2]
+        inputRef.current.value=location;
+        const searchCondition = it => (it.tags.includes(location.toLowerCase())) || it.tags.includes("")
+        setCentralData(centralData.filter(searchCondition));
+        setMealData(mealData.filter(searchCondition));
+        setBedsData(bedsData.filter(searchCondition));
+        setPlasmaData(plasmaData.filter(searchCondition));
+        setMedsData(medsData.filter(searchCondition));
+      } 
+    };
+    request.onerror = function() {};
+    request.send(); 
+  }
+
+  function error(err) {
+    console.log(`ERROR(${err.code}): ${err.message}`);
+  }
+
+  useEffect(()=>{
+      navigator.geolocation.getCurrentPosition(success,error);
+  },[])
+
 
   function setLists(e){
     e.preventDefault();
