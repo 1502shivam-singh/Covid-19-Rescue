@@ -84,25 +84,25 @@ export default function App() {
     }
   });
 
-  function success(pos) {
-    var crd = pos.coords;
+  function success(pos)  {
+    let crd = pos.coords;
     const latitude=crd.latitude;
     const longitude=crd.longitude;
-    var apikey = 'USE YOUR API KEY';
-    var api_url = 'https://api.opencagedata.com/geocode/v1/json'
-    var request_url = api_url
+    let apikey = 'USE YOUR API KEY';
+    let api_url = 'https://api.opencagedata.com/geocode/v1/json'
+    let request_url = api_url
       + '?'
       + 'key=' + apikey
       + '&q=' + encodeURIComponent(latitude + ',' + longitude)
       + '&pretty=1'
       + '&no_annotations=1';
-    var request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.open('GET', request_url, true);
     request.onload = function() {
       if (request.status === 200){ 
-        var data = JSON.parse(request.responseText);
+        let data = JSON.parse(request.responseText);
         const arr=data.results[0].formatted.split(',')
-        var location=arr[arr.length - 2]
+        let location=arr[arr.length - 2]
         inputRef.current.value=location;
         const searchCondition = it => (it.tags.includes(location.toLowerCase())) || it.tags.includes("")
         setCentralData(centralData.filter(searchCondition));
