@@ -12,7 +12,7 @@ const mealData = [
       tags: ["maharashtra", "ahmadnagar", "beed", "akola", "amravati", "parel", "aurangabad", "bhandara", "nagpur", "kolhapur"]
     },
     {
-      title: "Free food - Ludhiana (Model Town and nearby, Place order before 11:00 AM)",
+      title: "Free food - Ludhiana (Model Town and nearby)",
       link: "tel:7009719133",
       img: "/assets/images/meal.png",
       tags: ["punjab", "ludhiana", "ldh"]
