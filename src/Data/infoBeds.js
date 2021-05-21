@@ -6,6 +6,18 @@ const bedsData = [
       tags: ["tamil nadu", "tamilnadu", "tamil", "tamil-nadu"]
     },
     {
+      title: "Directorate of Medical Services, UP - hospital beds ",
+      link: "https://beds.dgmhup-covid19.in/EN/covid19bedtrack",
+      img: "/assets/images/beds.png",
+      tags: ["uttar-pradesh", "uttarpradesh", "up", "uttar pradesh", "lucknow","lko","agra"]
+    },
+    {
+      title: "Hospital beds - Uttar Pradesh",
+      link: "https://beds.dgmhup-covid19.in/EN/covid19bedtrack",
+      img: "/assets/images/beds.png",
+      tags: ["uttar-pradesh", "uttarpradesh", "up", "uttar pradesh", "lucknow","lko"]
+    },
+    {
       title: "Hospital beds - Uttar Pradesh",
       link: "https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/25?id=DASHBOARD_601b9e214c7a6b689d76f493&widgetId=608520f9039ec95a0fda7f10",
       img: "/assets/images/beds.png",
