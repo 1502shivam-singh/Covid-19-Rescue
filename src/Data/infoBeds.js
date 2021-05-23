@@ -3,7 +3,7 @@ const bedsData = [
       title: "Hospital beds - Tamil Nadu",
       link: "https://stopcorona.tn.gov.in/beds.php",
       img: "/assets/images/beds.png",
-      tags: ["tamil nadu", "tamilnadu", "tamil", "tamil-nadu"]
+      tags: ["tamil nadu", "tamilnadu", "tamil", "tamil-nadu"],
     },
     {
       title: "Directorate of Medical Services, UP - hospital beds ",
