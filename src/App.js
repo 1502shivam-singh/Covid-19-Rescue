@@ -88,7 +88,7 @@ export default function App() {
     let crd = pos.coords;
     const latitude=crd.latitude;
     const longitude=crd.longitude;
-    let apikey = ''; // For now...
+    let apikey = '8374c7ff68544be781a19ad6fc34c19d';
     let api_url = 'https://api.opencagedata.com/geocode/v1/json'
     let request_url = api_url
       + '?'
