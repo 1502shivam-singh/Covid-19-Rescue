@@ -85,12 +85,11 @@ export default function App() {
   });
 
   function success(pos)  {
-    let crd = pos.coords;
-    const latitude=crd.latitude;
-    const longitude=crd.longitude;
-    let apikey = '8374c7ff68544be781a19ad6fc34c19d';
-    let api_url = 'https://api.opencagedata.com/geocode/v1/json'
-    let request_url = api_url
+    const latitude=pos.coords.latitude;
+    const longitude=pos.coords.longitude;
+    const apikey = '8374c7ff68544be781a19ad6fc34c19d';
+    const api_url = 'https://api.opencagedata.com/geocode/v1/json';
+    const request_url = api_url
       + '?'
       + 'key=' + apikey
       + '&q=' + encodeURIComponent(latitude + ',' + longitude)
@@ -101,10 +100,10 @@ export default function App() {
     request.onload = function() {
       if (request.status === 200){ 
         let data = JSON.parse(request.responseText);
-        const arr=data.results[0].formatted.split(',')
-        let location=arr[arr.length - 2]
+        const arr=data.results[0].formatted.split(', ');
+        let location=arr[arr.length - 2];
         inputRef.current.value=location;
-        const searchCondition = it => (it.tags.includes(location.toLowerCase())) || it.tags.includes("")
+        const searchCondition = it => (it.tags.includes(location.toLowerCase())) || it.tags.includes("");
         setCentralData(centralData.filter(searchCondition));
         setMealData(mealData.filter(searchCondition));
         setBedsData(bedsData.filter(searchCondition));
@@ -130,7 +129,7 @@ export default function App() {
 
     if((e.type === "keyup" && e.keyCode == '13') || e.type === "click"){
       inputRef.current.value = e.currentTarget.innerHTML || inputRef.current.value;
-      const searchCondition = it => (it.tags.includes(e.currentTarget.innerHTML.toLowerCase() || inputRef.current.value.toLowerCase())) || it.tags.includes("")
+      const searchCondition = it => (it.tags.includes(e.currentTarget.innerHTML.toLowerCase() || inputRef.current.value.toLowerCase())) || it.tags.includes("");
 
       e.target.blur()
       setCentralData(centralData.filter(searchCondition));
