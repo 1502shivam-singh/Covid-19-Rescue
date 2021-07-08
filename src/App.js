@@ -120,7 +120,7 @@ export default function App() {
   }
 
   useEffect(()=>{
-      navigator.geolocation.getCurrentPosition(success,error);
+      // navigator.geolocation.getCurrentPosition(success,error);
   },[])
 
 
