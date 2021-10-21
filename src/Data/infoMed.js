@@ -135,25 +135,25 @@ const medsData = [
       title: "Remdesivir Distributors (pdf) - major states",
       link: "https://drive.google.com/file/d/1GG4GLuXzz_H9Q-gnEPkGEPeWQDdvrEDY/view",
       img: "/assets/images/meds.png",
-    tags: [""]
+    tags: []
     },
     {
       title: "Ready to fight - Covid",
       link: "https://readytofightcovid.in/",
       img: "/assets/images/meds.png",
-    tags: [""]
+    tags: []
     },
     {
       title: "Remdesivir distributors - cipla",
       link: "https://www.cipla.com/sites/default/files/Remdesivir-Distributor-List.pdf",
       img: "/assets/images/meds.png",
-    tags: [""]
+    tags: []
     },
     {
       title: "Tocilizumab distributors - cipla",
       link: "https://www.cipla.com/sites/default/files/Tocilizumab-Distributor-List.pdf",
       img: "/assets/images/meds.png",
-    tags: [""]
+    tags: []
     },
     {
       title: "Ambulance service - Get help now",
